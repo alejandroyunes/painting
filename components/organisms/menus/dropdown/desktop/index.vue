@@ -55,13 +55,24 @@ const homeLinks = [
   <nav class="menu">
 
     <ul class="menu-items">
-      
-      <NuxtLink to="/">
-        <li class="menu-item">
-          <h3 class="title">{{ $t('home') }}</h3>
-          <ArrowDownSvg class="icon arrow-icon" />
 
-          <ul :class="['sub-items', { 'clicked': isClicked }]" @click="itemClicked">
+      <NuxtLink to="/">
+        <li class="menu-item link-item">
+          <h3 class="title">{{ $t('home') }}</h3>
+        </li>
+      </NuxtLink>
+
+      <NuxtLink to="/about">
+        <li class="menu-item link-item">
+          <h3 class="title">{{ $t('about') }}</h3>
+        </li>
+      </NuxtLink>
+      
+      <li class="menu-item">
+        <h3 class="title">{{ $t('gallery') }}</h3>
+        <ArrowDownSvg class="icon arrow-icon" />
+
+        <ul :class="['sub-items', { 'clicked': isClicked }]" @click="itemClicked">
           <li v-for="(item, index) in homeLinks" :key="index" class="sub-item">
             <NuxtLink class="item" :to="item.link">
               <component :is="item.icon" class="icon" :alt="item.iconAlt" />
@@ -69,8 +80,7 @@ const homeLinks = [
             </NuxtLink>
           </li>
         </ul>
-        </li>
-      </NuxtLink>
+      </li>
 
       <li class="menu-item">
         <h3 class="title">{{ $t('drPuerta') }}</h3>
@@ -85,6 +95,12 @@ const homeLinks = [
           </li>
         </ul>
       </li>
+
+      <NuxtLink to="/contact">
+        <li class="menu-item link-item">
+          <h3 class="title">{{ $t('contact') }}</h3>
+        </li>
+      </NuxtLink>
 
     </ul>
   </nav>

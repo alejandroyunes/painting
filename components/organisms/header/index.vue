@@ -85,19 +85,15 @@ const setLanguage = (language: string) => {
 
     <div ref="headerRef" class="sticky-header" :class="{ 'sticky': isSticky }">
 
+      <Dropdown class="desktop-only" />
+
+      <UseSetTheme class="dark-mode-icons" />
+
       <div class="language-switcher">
         <button :class="{ 'active': locale === 'en' }" @click="setLanguage('en')">en</button>
         <button :class="{ 'active': locale === 'es' }" @click="setLanguage('es')">es</button>
       </div>
-
-      <UseSetTheme class="dark-mode-icons" />
-
-      <Dropdown class="desktop-only" />
-
-      <NuxtLink to="/contacto">
-        <Button :text="$t('contact')" class="contact-button desktop-only" primaryHover
-          aria-label="Ir a la sección de contacto" />
-      </NuxtLink>
+      
 
       <div class="hamburger-menu mobile-only" @click="toggleSliderTopNav">
         <HamburgerSvg class="icon" aria-label="Abrir menú de navegación" />
