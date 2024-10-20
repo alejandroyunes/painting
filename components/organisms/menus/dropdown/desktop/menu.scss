@@ -9,7 +9,7 @@
     .menu-item {  
       display: flex;
       cursor: pointer;
-      color: var(--heading);
+      color: var(--white);
       position: relative;
       line-height: 2.2rem;
       justify-content: center;
@@ -34,7 +34,7 @@
         margin-left: 8px;
         width: 1.1rem;
         transition: transform 0.3s ease;
-        stroke: var(--heading);
+        stroke: var(--white);
       }
   
       .sub-items { 

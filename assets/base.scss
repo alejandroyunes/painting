@@ -1,6 +1,6 @@
 :root {
-  --primary: rgb(22, 66, 91);
-  --primary-soft: rgb(67, 94, 110);
+  --primary: rgb(17, 156, 152);
+  --primary-soft: rgb(140, 168, 184);
   
   --secondary: rgb(62, 138, 158);
   --secondary-soft: rgb(113, 156, 168);
@@ -28,7 +28,7 @@
   --black-transparent: rgba(0, 0, 0, 0.5);
   --black-transparent-base: rgba(0, 0, 0, 0.1);
 
-  --gray: rgb(70, 70, 70);
+  --gray: rgb(71, 70, 70);
   --gray-soft: rgb(109, 100, 100);
   --gray-base: rgb(167, 154, 154);
 
@@ -98,7 +98,7 @@
 
   --background-opposite: var(--white);
   --background-opposite-soft: var(--white-soft);
-  --background-opposite-base: var(--white-base);
+  --background-opposite-base: var(--gray-soft);
 
   --heading: var(--white);
   --heading-soft: var(--white-soft);
