@@ -13,8 +13,8 @@ export default defineNuxtConfig({
 ],
 app: {
   head: {
-    htmlAttrs: { lang: 'es' },
-    title: 'Dr. Puerta Otorrinolaringología',
+    htmlAttrs: { lang: 'en' },
+    title: 'PetnPaw Oil Portraits',
     titleTemplate: '%s',
     link: [
       {
@@ -40,7 +40,7 @@ i18n: {
   //lazy: true, // true might be not fully supported
   // baseUrl: process.env.BASE_URL || "https://something",
   langDir: "locales/",
-  defaultLocale: "es",
+  defaultLocale: "en",
   detectBrowserLanguage: false,
   strategy: "no_prefix",
   lazy: false,
@@ -59,7 +59,7 @@ i18n: {
   ],
 },
 gtm: {
-  id: 'GTM-WB3N45XT',
+  id: 'GTM-123',
   defer: false,
   compatibility: false,
   enabled: true,

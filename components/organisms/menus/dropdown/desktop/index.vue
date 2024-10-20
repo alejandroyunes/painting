@@ -18,33 +18,39 @@ const itemClicked = () => {
   }, 100)
 }
 
-const supportLinks = [
+const galleryLinks = [
   {
-    title: 'education',
-    link: '/drpuerta',
-    icon: HospitalSvg,
-    iconAlt: 'Dr. Puerta universidad',
-  },
-  {
-    title: 'studies',
-    link: '/estudios',
-    icon: DiplomaSvg,
-    iconAlt: 'Dr. Puerta diplomado',
-  },
-]
-
-const homeLinks = [
-  {
-    title: 'home',
+    title: 'petGallery',
     link: '/',
     icon: HomeSvg,
     iconAlt: 'Dr. Puerta inicio',
   },
   {
-    title: 'gallery',
+    title: 'oilPortraits',
     link: '/galeria',
     icon: GallerySvg,
     iconAlt: 'Dr. Puerta galeria',
+  },
+  {
+    title: 'portraits',
+    link: '/galeria',
+    icon: GallerySvg,
+    iconAlt: 'Dr. Puerta galeria',
+  },
+]
+
+const infoLinks = [
+  {
+    title: 'prices',
+    link: '/prices',
+    icon: HospitalSvg,
+    iconAlt: 'Dr. Puerta precios',
+  },
+  {
+    title: 'ordering',
+    link: '/ordering',
+    icon: DiplomaSvg,
+    iconAlt: 'Dr. Puerta orden de compra',
   },
 ]
 
@@ -57,13 +63,13 @@ const homeLinks = [
     <ul class="menu-items">
 
       <NuxtLink to="/">
-        <li class="menu-item link-item">
+        <li class="menu-item">
           <h3 class="title">{{ $t('home') }}</h3>
         </li>
       </NuxtLink>
 
       <NuxtLink to="/about">
-        <li class="menu-item link-item">
+        <li class="menu-item">
           <h3 class="title">{{ $t('about') }}</h3>
         </li>
       </NuxtLink>
@@ -73,7 +79,7 @@ const homeLinks = [
         <ArrowDownSvg class="icon arrow-icon" />
 
         <ul :class="['sub-items', { 'clicked': isClicked }]" @click="itemClicked">
-          <li v-for="(item, index) in homeLinks" :key="index" class="sub-item">
+          <li v-for="(item, index) in galleryLinks" :key="index" class="sub-item">
             <NuxtLink class="item" :to="item.link">
               <component :is="item.icon" class="icon" :alt="item.iconAlt" />
               <p>{{ $t(item.title) }}</p>
@@ -83,11 +89,11 @@ const homeLinks = [
       </li>
 
       <li class="menu-item">
-        <h3 class="title">{{ $t('drPuerta') }}</h3>
+        <h3 class="title">{{ $t('info') }}</h3>
         <ArrowDownSvg class="icon arrow-icon" />
 
         <ul :class="['sub-items', { 'clicked': isClicked }]" @click="itemClicked">
-          <li v-for="(item, index) in supportLinks" :key="index" class="sub-item">
+          <li v-for="(item, index) in infoLinks" :key="index" class="sub-item">
             <NuxtLink class="item" :to="item.link">
               <component :is="item.icon" class="icon" :alt="item.iconAlt" />
               <p>{{ $t(item.title) }}</p>
@@ -97,7 +103,7 @@ const homeLinks = [
       </li>
 
       <NuxtLink to="/contact">
-        <li class="menu-item link-item">
+        <li class="menu-item">
           <h3 class="title">{{ $t('contact') }}</h3>
         </li>
       </NuxtLink>

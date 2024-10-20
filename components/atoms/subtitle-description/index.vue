@@ -3,11 +3,13 @@ import './subtitle-description.scss'
 
 type Props = {
   title: string
+  descriptionStrong?: string
   description?: string
+  descriptionEnd?: string
   marginTop?: boolean
 }
 
-const { title, description, marginTop } = defineProps<Props>()
+const { title, description, marginTop, descriptionStrong, descriptionEnd } = defineProps<Props>()
 
 </script>
 
@@ -16,7 +18,7 @@ const { title, description, marginTop } = defineProps<Props>()
 
     <h2 class="subtitle" :class="{ 'extra-top-space': marginTop }">{{ $t(title ?? '') }}</h2>
 
-    <p class="description">{{ $t(description ?? '') }}</p>
+    <p class="description"><span class="strong">{{ $t(descriptionStrong ?? '') }}</span> {{ $t(description ?? '') }} <span class="end">{{ $t(descriptionEnd ?? '') }}</span></p>
 
   </section>
 </template>

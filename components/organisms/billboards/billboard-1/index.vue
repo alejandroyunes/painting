@@ -16,8 +16,8 @@ const toggleModal = () => {
 
     <div class="details">
       <div class="details-content">
-        <h1 class="title">{{ $t('surgery') }}<br/> {{ $t('surgeryTitle') }}</h1>
-        <p class="description">{{ $t('surgeryDescription') }}</p>
+        <h1 class="title">PetnPaw<br/> {{ $t('oilPortraits') }}</h1>
+        <p class="description">{{ $t('homeDescriptionStrong') }}</p>
         <Buttons
           class="button-cta"
           :text="$t('weContactYou')" 
@@ -28,12 +28,12 @@ const toggleModal = () => {
     </div>
 
     <NuxtPicture
-      src="/images/woman-medium.webp"
+      src="/images/dogpainted.png"
       :alt="$t('billboard1Alt')"
       densities="x1"
       class="image"
       sizes="xs:400px md:400px xl:100vw" 
-      format="webp"
+      format="png"
     />
 
     <ContactModal v-if="isModalOpen" :toggleModal="toggleModal"/>

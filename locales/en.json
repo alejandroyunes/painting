@@ -1,6 +1,35 @@
 {
   "home": "Home",
   "about": "About",
+  "gallery": "Gallery",
+  "petGallery": "Pet Gallery",
+  "oilPortraits": "Oil Portraits",
+  "customPortraits": "Custom pet painted portraits by",
+  "portraits": "Portraits",
+  "info": "Info",
+  "prices": "Prices",
+  "ordering": "Ordering",
+  "contact": "Contact",
+  "pricing": "Pricing",
+  "pricingDescription": "Prices below relate to specific standard sizes but you can choose your own size. I will quote special sizes or multiple heads or animals once I know the details and seen the photos.",
+
+  "dogsCats": "Dogs/Cats",
+  "fullColorHead": "Full color Head (9\"x12\")",
+  "price1": "from $X",
+  "fullColorBody": "Full color Body (14\"x17\")",
+  "oneColorHead": "One color Head (11\"x14\")",
+  "oneColorFullBody": "One color Full Body (14\"x17\")",
+
+  "personWithPet": "Person w/Pet",
+  "fullColor": "Full color (18\"x24\")",
+  "oneColor": "One color (18\"x24\")",
+
+
+  "homeTitle": "Welcome to petnpaw custom pet oil portraits",
+  "homeDescriptionStrong": "Your premier destination for exquisite custom pet painted portraits in the USA.",
+  "homeDescription": "I am passionate about capturing the unique essence of your pet and transforming it into a stunning piece of art that you will cherish forever. If you are looking for the perfect heartfelt gift or a beautiful way of honoring your pet, my custom oil pet painted portraits are the perfect choice. These are one of a kind works of art, done specially for you. They become valuable family keepsakes and make wonderful gifts, but most of all, they are fond memories of your beloved furry friends that will always be a part of you and your family, and remember,",
+  "homeDescriptionEnd": "memories are forever.",
+
   "studies": "Studies",
   "education": "Education",
   "drPuerta": "Dr. Puerta",
@@ -8,9 +37,8 @@
   "drPuertaDescription": "Medical and Surgeon, specialist in Otorhinolaryngology of the University of Antioquia.",
   "diplomado": "Diplomado",
   "postgraduate": "Posgrado",
-  "gallery": "Gallery",
   "galleryDescription": "To see more images, please visit our Instagram page.",
-  "contact": "Contact",
+
   "contactUs": "Contact Us",
   "readMore": "Read more",
   "thankyou": "Thank you!",
@@ -33,10 +61,10 @@
   "contactModalRequestErrorInfo": "Sorry, we're experiencing difficulties communicating with the server. Please ensure you have a stable internet connection and try again. If the problem persists, please contact support for assistance.",
 
   "siteLocale": "en_US",
-  "homeMetaTitle": "Dr. Jorge Puerta",
-  "homeMetaDescription": "Medical and Surgeon, specialist in Otorhinolaryngology of the University of Antioquia.",
-  "homeMetaName": "Dr. Puerta homepage",
-  "homeMetaUrl": "https://drpuerta.com",
+  "homeMetaTitle": "PetnPaw Custom Pet Oil Portraits",
+  "homeMetaDescription": "Your premier destination for exquisite custom pet painted portraits in the USA.",
+  "homeMetaName": "PetnPaw homepage",
+  "homeMetaUrl": "https://petnpaw.com",
 
   "estudiosMetaTitle": "Studies of Dr. Puerta",
   "estudiosMetaDescription": "Studies made by Dr. Jorge Puerta in his professional career.",
@@ -74,8 +102,8 @@
   "iconCardsTitle4": "University of Antioquia",
   "iconCardsDescription4": "Head of Section of Otorhinolaryngology and Head and Neck Surgery - Faculty of Medicine | 2008 to 2018.",
 
-  "billboard2Title": "Procedures",
-  "billboard2Subtitle": "Learn more about the expertise of Dr. Puerta, a renowned rhinoplasty surgeon.",
+  "billboard2Title": "Custom Pet Paintings",
+  "billboard2Subtitle": "Creating custom pet paintings is more than a job; it's a passion. Each painting is a labor of love, crafted with meticulous attention to detail and a deep appreciation for the bond between pets and their owners.",
 
   "billboard3Title": "Rhinoplasty",
   "billboard3Subtitle": "Rhinoplasty is one of the most technically difficult procedures among cosmetic surgeries. It requires a high sense of aesthetics associated with a great knowledge of anatomy to achieve a pleasing, natural result, and preserving.",

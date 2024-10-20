@@ -4,7 +4,7 @@
   max-width: var(--max-width);
   margin: 0 auto;
   gap: 24px;
-  padding: 148px 24px 0;
+  padding: 80px 24px 0;
 
   .contact-page-info {
     display: flex;
@@ -12,35 +12,19 @@
     justify-content: center;
     gap: 16px;
 
-    .contact-page-content {
+    .image {
       display: flex;
-      flex-direction: column;
-      gap: 16px;
-      color: var(--heading);
-      
-      p {
-        font-size: 1rem;
+      justify-content: center;
+      align-items: center;
+      transform: rotateY(180deg);
+      img {
+        width: 100%;
+        max-width: 420px;
+        max-height: 640px;
+        object-fit: cover;
       }
-
-      .icon {
-        width: 32px;
-        margin-right: 10px;
-      }
-
-      .column {
-        display: flex;
-        gap: 4px;
-  
-        p, a {
-          cursor: pointer;
-          color: var(--heading);
-          font-size: 1rem;
-          font-weight: 600;
-        }
-
-      }
-  
     }
+
   }
 
   .contact-page-form {

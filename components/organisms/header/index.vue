@@ -71,7 +71,7 @@ const setLanguage = (language: string) => {
 
     <div ref="topContainerRef" class="sticky-header-top" :class="{ 'sticky-header-invisible': isSticky }">
 
-      <div class="sticky-header-item">
+      <div class="sticky-header-item ">
         <h1>PetnPaw</h1>
         <NuxtPicture src="/images/petnpaw-dog.png" alt="Logo Dr. Puerta" class="logo" sizes="xs:110px md:110px xl:110px"
           format="png" @load="updateHeights" />
@@ -85,21 +85,28 @@ const setLanguage = (language: string) => {
 
     <div ref="headerRef" class="sticky-header" :class="{ 'sticky': isSticky }">
 
-      <Dropdown class="desktop-only" />
 
-      <UseSetTheme class="dark-mode-icons" />
+        <h1 class="mobile-only">PetnPaw {{ $t('oilPortraits') }}</h1>
+       
+        <Dropdown class="desktop-only" />
 
-      <div class="language-switcher">
-        <button :class="{ 'active': locale === 'en' }" @click="setLanguage('en')">en</button>
-        <button :class="{ 'active': locale === 'es' }" @click="setLanguage('es')">es</button>
+      <div class="menu-items">
+
+          <UseSetTheme class="dark-mode-icons" />
+
+          <div class="language-switcher">
+            <button :class="{ 'active': locale === 'en' }" @click="setLanguage('en')">en</button>
+            <button :class="{ 'active': locale === 'es' }" @click="setLanguage('es')">es</button>
+          </div>
+
+          <div class="hamburger-menu mobile-only" @click="toggleSliderTopNav">
+            <HamburgerSvg class="icon" aria-label="Abrir menú de navegación" />
+          </div>
+
+          
+        <SliderTopNav :toggle="toggleSliderTopNav" :isOpen="isSliderTopNavOpen" />
       </div>
-      
 
-      <div class="hamburger-menu mobile-only" @click="toggleSliderTopNav">
-        <HamburgerSvg class="icon" aria-label="Abrir menú de navegación" />
-      </div>
-
-      <SliderTopNav :toggle="toggleSliderTopNav" :isOpen="isSliderTopNavOpen" />
     </div>
 
   </div>

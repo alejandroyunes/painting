@@ -11,47 +11,21 @@
 <template>
   <div class="contact-page">
 
-    <div class="contact-page-info">
-
-      <div class="contact-page-content">
-        <div class="column">
-          <LocationSvg class="icon" />
-          <p>Cl. 4 Sur #43a-195 - {{ $t('footerOffice') }} 165 – Medellín Colombia</p>
-        </div>
-
-        <div class="column">
-          <TelephoneSvg class="icon" />
-          <p>{{ $t('footerTel') }}: <a href="tel:+6042685436">+6 04 268 5436</a> – Cel: 318 898 1046</p>
-        </div>
-      </div>
-
-      <div class="contact-page-content">
-
-        <NuxtLink to="https://www.google.com/maps/place/The+Executive+Center/@6.2008251,-75.5781225,17z/data=!3m1!4b1!4m6!3m5!1s0x8e46827d9522146f:0x9cb4fb2387c83dc8!8m2!3d6.2008198!4d-75.5755476!16s%2Fg%2F11f30d2qqg?shorturl=1" target="_blank">
-          <div class="column">
-            <GoogleSvg class="icon" />
-            <p>{{ $t('contactGoogle') }}</p>
-          </div>
-        </NuxtLink>
-
-        <NuxtLink to="https://www.waze.com/ul?ll=@4.6387594%2C-75.6011931%2C15z?navigate=yes&zoom=17" target="_blank">
-          <div class="column">
-            <WazeSvg class="icon" />
-            <p>{{ $t('contactWaze') }}</p>
-          </div>
-        </NuxtLink>
-      </div>
-
-      <div class="contact-page-content">
-        <p>{{ $t('contactHowTo') }}</p>
-        <p>{{ $t('contactHowToDescription') }}</p>
-      </div>
-
-    </div>
-
     <div class="contact-page-form">
       <h2 class="contact-form-title">{{ $t('contactWriteUs') }}</h2>
       <ContactForm />
+    </div>
+
+    <div class="contact-page-info">
+      <NuxtPicture
+      src="/images/contactdog.png"
+      :alt="$t('billboard1Alt')"
+      densities="x1"
+      class="image"
+      sizes="xs:400px md:400px xl:100vw" 
+      format="png"
+    />
+
     </div>
 
   </div>
