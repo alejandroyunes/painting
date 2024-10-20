@@ -26,8 +26,8 @@ const navLinks = [
     iconAlt: 'Diseño web',
   },
   {
-    title: 'drPuerta',
-    link: '/drpuerta',
+    title: 'about',
+    link: '/about',
     icon: HospitalSvg,
     iconAlt: 'Diseño web',
   },
@@ -38,8 +38,8 @@ const navLinks = [
     iconAlt: 'Dr. Puerta galeria',
   },
   {
-    title: 'studies',
-    link: '/estudios',
+    title: 'info',
+    link: '/info',
     icon: DiplomaSvg,
     iconAlt: 'Diseño gráfico'
   },
@@ -52,8 +52,8 @@ const navLinks = [
 ]
 
 const socialLinks = [
-  { icon: InstagramMobileMenuSvg, to: 'https://www.instagram.com/cirugiafacial_jorgepuerta/' },
-  { icon: WhatsAppSvg, to: 'https://api.whatsapp.com/send/?phone=573188981046&text&type=phone_number&app_absent=0' },
+  { icon: InstagramMobileMenuSvg, to: 'https://www.instagram.com/' },
+  { icon: WhatsAppSvg, to: 'https://api.whatsapp.com/send/' },
 ]
 
 </script>
@@ -70,10 +70,10 @@ const socialLinks = [
       <NuxtLink @click="toggle" to="/" class="top-nav-logo">
         <NuxtPicture
           class="image"
-          src="/logo.webp"
+          src="/images/petnpaw-dog.png"
           alt="Logo Dr. Puerta"
           densities="x1"
-          sizes="xs:140px md:168px xl:168px"
+          sizes="xs:90px md:90px xl:90px"
           format="webp"
         />
       </NuxtLink>

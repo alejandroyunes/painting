@@ -75,10 +75,10 @@ const setLanguage = (language: string) => {
         <h1>PetnPaw</h1>
         <NuxtPicture src="/images/petnpaw-dog.png" alt="Logo Dr. Puerta" class="logo" sizes="xs:110px md:110px xl:110px"
           format="png" @load="updateHeights" />
-        <h1>Oil portraits</h1>
+        <h1>{{ $t('oilPortraits') }}</h1>
       </div>
 
-      <span>Custom pet painted portraits by</span>
+      <span>{{ $t('customPortraits') }}</span>
       <p>Ricardo Morales Hendry</p>
 
     </div>
@@ -86,7 +86,7 @@ const setLanguage = (language: string) => {
     <div ref="headerRef" class="sticky-header" :class="{ 'sticky': isSticky }">
 
 
-        <h1 class="mobile-only">PetnPaw {{ $t('oilPortraits') }}</h1>
+        <h1 class="mobile-only">PetnPaw </h1>
        
         <Dropdown class="desktop-only" />
 

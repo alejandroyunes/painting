@@ -9,12 +9,12 @@
   const socialLinks = [
     {
       icon: InstagramSvg,
-      to: 'https://www.instagram.com/cirugiafacial_jorgepuerta/',
+      to: 'https://www.instagram.com/',
       label: 'Visítanos en Instagram',
     },
     {
       icon: WhatsAppSvg,
-      to: 'https://api.whatsapp.com/send/?phone=573188981046&text&type=phone_number&app_absent=0',
+      to: 'https://api.whatsapp.com/send/',
       label: 'Contáctanos por WhatsApp',
     },
   ]
@@ -25,9 +25,9 @@
 
     <div class="footer-content">
       <div class="footer-item">
-        <h3 class="">{{ $t('drPuertaFull') }}</h3>
+        <h3 class="">Ricardo Morales Hendry</h3>
         
-        <p>{{ $t('drPuertaDescription') }}</p>
+        <p>{{ $t('homeDescriptionStrong') }}</p>
 
         <div class="social-links">
           <NuxtLink v-for="link in socialLinks" :to="link.to" target="_blank">
@@ -40,24 +40,22 @@
         <h3 class="">{{ $t('footerLinks') }}</h3>
           <ul>
             <li><NuxtLink to="/">{{ $t('home') }}</NuxtLink></li>
-            <li><NuxtLink to="/drpuerta">{{ $t('drPuerta') }}</NuxtLink></li>
-            <li><NuxtLink to="/estudios">{{ $t('studies') }}</NuxtLink></li>
-            <li><NuxtLink to="/galeria">{{ $t('gallery') }}</NuxtLink></li>
-            <li><NuxtLink to="/contacto">{{ $t('contact') }}</NuxtLink></li>
+            <li><NuxtLink to="/home">{{ $t('gallery') }}</NuxtLink></li>
+            <li><NuxtLink to="/info">{{ $t('info') }}</NuxtLink></li>
+            <li><NuxtLink to="/contact">{{ $t('contact') }}</NuxtLink></li>
         </ul>
       </div>
       
       <div class="footer-item">
         <h3 class="">{{ $t('contactUs') }}</h3>
         <ul>
-          <li>+6 04 268 5436</li>
-          <li> 318 898 1046.</li>
-          <li>Cl. 4 Sur #43a-195 {{ $t('footerOffice') }} 165</li>
-          <li>Medellín - Colombia.</li>
+          <li> +1 5617145164</li>
+          <li> 4406 Ringrose Dr. Missouri City, TX 77459</li>
+          <li>USA.</li>
         </ul>
       </div>
     </div>
 
-    <p class="copyright">&copy; {{ currentYear }} {{ $t('drPuertaFull') }}</p>
+    <p class="copyright">&copy; {{ currentYear }} Ricardo Morales Hendry</p>
   </footer>
 </template>

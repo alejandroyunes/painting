@@ -76,7 +76,7 @@ export default {
   &__section {
     margin-bottom: 30px;
     background-color: #fff;
-    padding: 20px;
+    padding: 20px 0;
     border-radius: 6px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
   }
