@@ -45,6 +45,6 @@ useHead({
     </article>
     <Footer />
 
-    <FloatingWhatsapp />
+    <!-- <FloatingWhatsapp /> -->
   </div>
 </template>
